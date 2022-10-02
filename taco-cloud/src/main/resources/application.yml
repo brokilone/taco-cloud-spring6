@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    generate-unique-name: false
+    name: tacocloud
+  data:
+    rest:
+      base-path: /data-api
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://auth-server:9000
+taco:
+  orders:
+    page-size: 20
